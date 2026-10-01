@@ -33,7 +33,7 @@ Despliegue estructural aislando dependencias para evitar conflictos sistémicos 
 
 **Pasos de despliegue:**
 1. **Posicionamiento:** Abrí tu terminal y navegá al directorio raíz del proyecto:
-   `cd "ruta\a\tu\carpeta\VideoTranscriptor"`
+   `cd "ruta\a\tu\carpeta\VIDEO_TRANSCRIPTOR"`
 2. **Aislamiento del entorno:** Creá un entorno virtual encapsulado:
    `python -m venv .venv`
 3. **Activación:** Activá el subsistema para que la terminal utilice las librerías locales:
@@ -42,7 +42,7 @@ Despliegue estructural aislando dependencias para evitar conflictos sistémicos 
 4. **Instalación de dependencias (Neguentropía):**
    `pip install faster-whisper`
 5. **Ejecución:** Asegurate de tener el archivo `video.mp4` en la misma raíz de la carpeta y ejecutá el proceso de transformación:
-   `python VideoTranscriptor.py`
+   `python video_transcriptor.py`
 
 ---
 
@@ -50,12 +50,12 @@ Despliegue estructural aislando dependencias para evitar conflictos sistémicos 
 
 Para que el script opere correctamente y mantenga su estado de homeostasis, el directorio local debe lucir así:
 
-> VideoTranscriptor/
-> │
-> ├── .venv/                   # Entorno virtual aislado (No se sube a GitHub)
-> ├── VideoTranscriptor.py     # Código fuente principal
-> ├── video.mp4                # Archivo de entrada (Input)
-> └── transcripcion.txt        # Archivo generado (Output)
+> VIDEO_TRANSCRIPTOR/  
+> │  
+> ├── .venv/                   # Entorno virtual aislado (No se sube a GitHub)  
+> ├── video_transcriptor.py     # Código fuente principal  
+> ├── video.mp4                # Archivo de entrada (Input)  
+> └── transcripcion.txt        # Archivo generado (Output)  
 
 ---
 *Desarrollado para la materia Sistemas y Organizaciones.*
